@@ -1,10 +1,15 @@
-/* 
-Fonte: Roboto
-cores: #129799 bg
-       #FFA185 bg
-       #F7F7F7 texto
+/* Importando a fonte roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*/
+
+/* Definindo as variaveis de cores e tipografia */
+:root{
+  --cor-primaria: #129799;
+  --cor-secundaria: #FFA185;
+  --cor-texto: #F7F7F7;
+
+  --font: 'Roboto', sans-serif;
+}
 
 
 /* Resetando espaçamentos */
