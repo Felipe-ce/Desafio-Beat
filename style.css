@@ -1,0 +1,13 @@
+
+/* Resetando espaçamentos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Deixando imagens fluidas com o max-width*/
+img{
+
+  display: block;
+  max-width: 100%;
+}
