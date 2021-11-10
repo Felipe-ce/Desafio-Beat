@@ -20,7 +20,146 @@
 }
 /* Deixando imagens fluidas com o max-width*/
 img{
-
   display: block;
   max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+body{
+  font-family: var(--font);
+}
+
+
+/*
+=================
+Estou desenvolvendo o site no modelo Mobile first, que consiste em desevnolver primeiro a versao mobile
+=================
+*/
+
+/* estilos da header */
+.header{
+  background: var(--cor-primaria);
+}
+.header ul{
+  padding: .5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.header li a {
+  color: var(--cor-texto);
+  font-size: 1.25rem;
+}
+
+/* estilos da section introdução */
+.introducao{
+  background: var(--cor-primaria);
+  padding: 2.5rem 1rem;
+  color: var(--cor-texto);
+}
+.introducao-content{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.introducao ul{
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+}
+.introducao ul li{
+  font-size: .875rem;
+}
+
+/* Adapitando os estilos para tela acima de 768px */
+@media(min-width: 768px){
+  .introducao-content div:first-of-type{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .introducao-content div:first-of-type h1{
+    font-size: 3rem;
+  }
+  .introducao-content div:first-of-type img{
+    max-width: 350px;
+  }
+  .introducao ul{
+    justify-content: space-evenly;
+  }
+}
+
+/* estilos da section coteudo */
+.coteudo{
+  padding: 2.5rem 1rem;
+  background: var(--cor-secundaria);
+}
+.coteudo > h2{
+  font-size: 2rem;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+}
+.coteudo > p{
+  max-width: 700px;
+  margin-bottom: 1.25rem;
+}
+.coteudo > a{
+  display: block;
+  max-width: 100px;
+  padding: .5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 1.25rem;
+}
+.conteudo-discos-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* Adapitando os estilos para tela acima de 768px */
+@media(min-width: 768px){
+  .conteudo-discos-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
+  .coteudo > a{
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+/* estilos da do footer */
+.footer{
+  background: var(--cor-primaria);
+  padding: 1.5rem .5rem;
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul{
+  display: flex;
+  gap: .8rem;
+}
+.footer ul img{
+width: 20px;
+}
+.footer ul a{
+color: var(--cor-texto);
+}
+/* Adapitando os estilos para tela acima de 768px */
+@media(min-width: 768px){
+  .footer{
+    justify-content: space-evenly;
+  }
+  .footer ul{
+
+    gap: 1.5rem;
+  }
 }
